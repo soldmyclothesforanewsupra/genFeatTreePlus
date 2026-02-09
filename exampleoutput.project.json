@@ -1,0 +1,92 @@
+{
+  "name": "genFeatTreePlus",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$className": "ReplicatedFirst",
+      "$ignoreUnknownInstances": true,
+      "packages": {
+        "$path": "src/packages/client"
+      },
+      "shared": {
+        "$path": "src/shared",
+        "network": {
+          "$className": "Folder",
+          "classes": {
+            "$className": "Folder",
+            "BufferWindow": {
+              "$path": "src/shared/network/classes/BufferWindow.luau"
+            },
+            "PlayerNetworkData": {
+              "$path": "src/shared/network/classes/PlayerNetworkData.luau"
+            }
+          },
+          "modules": {
+            "$className": "Folder",
+            "ClientThread": {
+              "$path": "src/shared/network/modules/ClientThread.luau"
+            },
+            "Serializing": {
+              "$path": "src/shared/network/modules/Serializing.luau"
+            }
+          },
+          "NetworkClient": {
+            "$path": "src/shared/network/NetworkClient.luau"
+          }
+        },
+        "players": {
+          "$className": "Folder",
+          "data": {
+            "$className": "Folder",
+            "PlayerProfileStore": {
+              "$path": "src/shared/players/data/PlayerProfileStore.luau"
+            },
+            "ProfileStoreTemplate": {
+              "$path": "src/shared/players/data/ProfileStoreTemplate.luau"
+            }
+          }
+        }
+      },
+      "Client": {
+        "$path": "src/startup/Client.client.luau"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$ignoreUnknownInstances": true,
+      "Server": {
+        "$path": "src/startup/Server.server.luau"
+      },
+      "packages": {
+        "$path": "src/packages/server"
+      },
+      "shared": {
+        "$path": "src/shared",
+        "network": {
+          "$className": "Folder",
+          "modules": {
+            "$className": "Folder",
+            "ServerThread": {
+              "$path": "src/shared/network/modules/ServerThread.luau"
+            }
+          },
+          "NetworkServer": {
+            "$path": "src/shared/network/NetworkServer.luau"
+          }
+        },
+        "players": {
+          "$className": "Folder",
+          "classes": {
+            "$className": "Folder",
+            "PlayerServerData": {
+              "$path": "src/shared/players/classes/PlayerServerData.luau"
+            }
+          },
+          "PlayersServer": {
+            "$path": "src/shared/players/PlayersServer.luau"
+          }
+        }
+      }
+    }
+  }
+}
