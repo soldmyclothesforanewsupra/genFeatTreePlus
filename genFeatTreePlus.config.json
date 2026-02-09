@@ -1,8 +1,8 @@
 {
   "basePath": "../../src",
   "sourceRoot": "src",
-  "outputFile": "../../genFeatTreePlus.project.json",
-  "projectName": "genFeatTreePlus",
+  "outputFile": "../../default.project.json",
+  "projectName": "default",
   "fileExtension": ".luau",
   "folderCasing": "none",
 
@@ -33,3 +33,4 @@
     }
   }
 }
+
