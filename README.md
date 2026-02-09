@@ -5,8 +5,9 @@ A Rojo project tree generator for feature-first programming. Scans your source d
 ## Usage
 Place in a folder that's in the same location as your rojo project and run this to create a brand new project.json file!
 ```bash
-npm start genFeatTreePlus.js
+node genFeatTreePlus.js
 ```
+(or use the batch file)
 
 ## Configuration
 All options live in `genFeatTreePlus.config.json`.
