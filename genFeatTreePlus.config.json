@@ -1,0 +1,35 @@
+{
+  "basePath": "../../src",
+  "sourceRoot": "src",
+  "outputFile": "../../genFeatTreePlus.project.json",
+  "projectName": "genFeatTreePlus",
+  "fileExtension": ".luau",
+  "folderCasing": "none",
+
+  "blacklistedDirs": ["ui", "startup", "packages"],
+
+  "serverKeywords": ["server"],
+  "promotedNames": ["init"],
+  "compoundNames": ["server", "client", "utils", "types"],
+
+  "sharedRoot": ["ReplicatedFirst"],
+  "serverRoot": ["ServerScriptService"],
+
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$className": "ReplicatedFirst",
+      "$ignoreUnknownInstances": true,
+      "packages": { "$path": "src/packages/client" },
+      "shared": { "$path": "src/shared" },
+      "Client": { "$path": "src/startup/Client.client.luau" }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$ignoreUnknownInstances": true,
+      "Server": { "$path": "src/startup/Server.server.luau" },
+      "packages": { "$path": "src/packages/server" },
+      "shared": { "$path": "src/shared" }
+    }
+  }
+}
